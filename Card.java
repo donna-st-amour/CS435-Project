@@ -11,7 +11,8 @@ public class Card {
 		this.cardNumber = cardNumber;
 		this.expirationDate = expirationDate;
 		this.securityCode = securityCode;
-	}
+	}//end card constructor
+	
 	private boolean updateInfo(String name, int cardNumber, String expirationDate, int securityCode) {
 		this.name = name;
 		this.cardNumber = cardNumber;
