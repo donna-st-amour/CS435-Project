@@ -1,11 +1,9 @@
-
 import java.util.Scanner;
 
-public class Driver implements TicketSystem {
-	Card card;
-	String licensePlate;
-	Account account = new Account();
+public class ParkingLot implements TicketSystem{
+	LotSection[] lotArray;
 	
+	@Override
 	public Card scanCard(){
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Please enter the driver's name: ");
@@ -22,6 +20,13 @@ public class Driver implements TicketSystem {
 		return card;
 	}//end scanCard method
 
+	@Override
+	public void printTicket() {
+		// TODO Auto-generated method stub
+		
+	}//end printTicket method
+	
+	@Override
 	public int scanTicket() {
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Enter the ticket number: ");
@@ -30,13 +35,22 @@ public class Driver implements TicketSystem {
 		//Must also open a spot here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		return ticket;
 	}//end scanTicket method
-	
-	public void printTicket(){
-		
-	}//end printTicket method
-	
-	public void printReceipt(){
+
+
+	@Override
+	public void printReceipt() {
+		// TODO Auto-generated method stub
 		
 	}//end printReceipt method
+	
+	public boolean addSection() {
+		return true;
+	}//end addSection method
+	
+	public boolean removeSection() {
+		return true;
+	}//end removeSection method
 
-}//end Driver class
+	
+	
+}//end ParkingLot class

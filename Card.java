@@ -1,4 +1,3 @@
-
 public class Card {
 	String name;
 	int cardNumber;
@@ -13,6 +12,7 @@ public class Card {
 		this.securityCode = securityCode;
 	}//end card constructor
 	
+	@SuppressWarnings("unused")
 	private boolean updateInfo(String name, int cardNumber, String expirationDate, int securityCode) {
 		this.name = name;
 		this.cardNumber = cardNumber;

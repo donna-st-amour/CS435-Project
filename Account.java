@@ -1,4 +1,3 @@
-
 public class Account {
 	String accountName;
 	int accountNumber;
@@ -8,15 +7,18 @@ public class Account {
 	boolean withdrawSuccess = false;
 	float amount;
 	
+	@SuppressWarnings("unused")
 	private float getBalance() {
 		return balance;
 	}//end getBalance method
 	
+	@SuppressWarnings("unused")
 	private boolean deposit(float amount) {
 		balance = balance + amount;
 		return depositSuccess;
 	}//end deposit method
 	
+	@SuppressWarnings("unused")
 	private boolean withdraw(float amount) {
 		if(balance > amount) {
 			balance = balance - amount;
